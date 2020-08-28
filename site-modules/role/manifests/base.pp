@@ -6,4 +6,7 @@
 #   include role::base
 class role::base {
   include profile::section1
+  include profile::section2::webserver
+  include profile::section2::zip7choco
+
 }
