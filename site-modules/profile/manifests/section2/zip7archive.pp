@@ -13,7 +13,7 @@ class profile::section2::zip7archive {
   package { '7-Zip 19.00 (64-bit)':
     ensure          => installed,
     source          => 'c:/7z1900-x64.exe',
-    install_options => ['/s'],
+    install_options => ['/S'],
     notify          => Reboot['after_run_package'],
   }
 
