@@ -34,7 +34,7 @@ class profile::section1 (
   user { $username:
     ensure   => 'present',
     password => $password,
-    groups   => [$groupname]
+    groups   => $groupname,
   }
 
   local_security_policy { 'Log on as a service':
